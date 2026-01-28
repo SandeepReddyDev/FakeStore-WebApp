@@ -17,7 +17,7 @@ const handleLogout = () => {
     <nav className="navbar">
       {/* Logo */}
       <div className="nav-left">
-        <span className="logo-icon"><img src="https://i.pinimg.com/736x/d8/77/bd/d877bd32c898a457f997c83d6a0b3d1d.jpg" className="logo-icon"/></span>
+        <span className="logo-icon"><img src="https://i.pinimg.com/736x/d8/77/bd/d877bd32c898a457f997c83d6a0b3d1d.jpg" className="logo-icon" alt="logo"/></span>
        
       </div>
 
