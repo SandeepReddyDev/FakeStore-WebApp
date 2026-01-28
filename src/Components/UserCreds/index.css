@@ -1,0 +1,87 @@
+.creds-container {
+  position: fixed;
+  top: 40px;
+  right: 20px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 10px 14px;
+  border-radius: 30px;
+
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+
+  cursor: pointer;
+animation: glow 3s infinite;
+  transition: all 0.3s ease;
+}
+
+@keyframes glow {
+  0% ,100%{
+    box-shadow: 0 0 5px #72a4d1 0 0 15px #42a5f5, 0 30px #42a5f5;;
+    
+  }
+  50% {
+    box-shadow: 
+      0 0 15px #1ee5e2,
+      0 0 30px #505b94,
+      0 0 45px #1e88e5;
+  }
+  75% {
+    box-shadow: 
+      0 0 5px #42a5f5,
+      0 0 15px #42a5f5,
+      0 0 30px #42a5f5;
+  }
+}
+
+/* Slight lift on hover */
+.creds-container:hover {
+  transform: translateY(-2px);
+}
+
+/* User icon */
+.user-icon {
+  width: 20px;
+  height: 20px;
+  padding: 8px;
+  border-radius: 50%;
+
+  background: linear-gradient(135deg, #1e88e5, #42a5f5);
+  color: white;
+
+  transition: transform 0.3s ease;
+}
+
+.creds-container:hover .user-icon {
+  transform: rotate(8deg) scale(1.05);
+}
+
+/* Credentials box */
+.user-creds {
+  max-width: 0;
+  opacity: 0;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  transition: all 0.4s ease;
+}
+
+/* Reveal on hover */
+.creds-container:hover .user-creds {
+  max-width: 160px;
+  opacity: 1;
+}
+
+/* Text */
+.Creds {
+  font-size: 13px;
+  font-weight: 500;
+  color: #0d47a1;
+  white-space: nowrap;
+}

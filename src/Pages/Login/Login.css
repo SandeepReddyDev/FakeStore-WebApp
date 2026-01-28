@@ -1,0 +1,101 @@
+.login-container {
+  height: 100vh;
+  background: linear-gradient(135deg, #eaf3fb, #d6e9f8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.login-card {
+  width: 360px;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 35px 30px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(30, 136, 229, 0.25);
+}
+
+.login-logo {
+  width: 90px;
+  margin-bottom: 15px;
+  border-radius: 50%;
+}
+
+.login-card h1 {
+  font-size: 22px;
+  color: #1565c0;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #607d8b;
+  margin-bottom: 20px;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 15px;
+  border-radius: 14px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  outline: none;
+}
+
+.login-card input:focus {
+  border-color: #1e88e5;
+}
+
+.login-card button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 18px;
+  border: none;
+  background: linear-gradient(135deg, #1e88e5, #42a5f5);
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.login-card button:hover {
+  opacity: 0.95;
+}
+
+.error-text {
+  color: #e53935;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+.input{
+    max-width: 80%;
+}
+.login-btn{
+    max-width: 50%;
+}
+.password-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  padding-right: 40px; /* space for icon */
+}
+
+.password-toggle-icon {
+  position: absolute;
+  top: 50%;
+  right: 40px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #777;
+  font-size: 18px;
+}
+
+.password-toggle-icon:hover {
+  color: #000;
+}
