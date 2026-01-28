@@ -130,16 +130,7 @@ const Dashboard = ({ search, products, setProducts ,setProductModal}) => {
     return matchesCategory && matchesSearch;
   });
 
-  const handleAddProduct = () => {
-    const newProduct = {
-      id: products.length + 1,
-      title: "New Product",
-      price: 0,
-      category: "electronics",
-      image: "https://placehold.co/200x200?text=New+Product",
-    };
-    setProducts([...products, newProduct]);
-  };
+
 
   // ✅ DELETE
  const handleDelete = async (id) => {
